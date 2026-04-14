@@ -6,5 +6,8 @@ app = Flask(__name__)
 def home():
     return "Hello AWS Deployment 🚀"
 
-if __name__ == '__main__':
+# IMPORTANT for AWS
+application = app
+
+if __name__ == "__main__":
     app.run()
